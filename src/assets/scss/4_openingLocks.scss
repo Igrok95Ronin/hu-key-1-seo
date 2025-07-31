@@ -46,7 +46,7 @@
     position: relative;
     
     &::before {
-        content: '🔓';
+        content: '';
         position: absolute;
         left: 50%;
         top: -40px;
@@ -80,6 +80,10 @@
         grid-template-columns: 1fr;
         gap: 30px;
     }
+}
+
+.openingLocks__wrp-marginTop{
+    margin-top: 40px;
 }
 
 .openingLocks__ul {
