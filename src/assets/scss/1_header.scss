@@ -181,28 +181,32 @@
     }
     
     .header__box {
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        padding: 15px 10px;
+        padding: 10px 15px;
+        min-height: calc(var(--headerHeight) - 10px);
     }
     
     .header__log {
-        margin-bottom: 10px;
+        img {
+            height: 35px;
+        }
+        
+        &::after {
+            display: none;
+        }
     }
     
     .header__ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        gap: 8px;
         
         li::before {
             display: none;
         }
         
         a {
-            font-size: 13px;
-            padding: 6px 12px;
+            font-size: 12px;
+            padding: 5px 10px;
         }
     }
 }
